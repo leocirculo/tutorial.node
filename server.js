@@ -43,6 +43,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/profile', (req, res) => {
+  res.render('profile.hbs', {
+    pageTitle: 'Profile',
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: '404 not found',
